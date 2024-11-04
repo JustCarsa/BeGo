@@ -65,10 +65,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Galeri</a></li>
-          </li>
           <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -90,22 +87,6 @@
             <a href="#menu" class="btn-menu animated fadeInUp scrollto">Menu</a>
             <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Reservasi</a>
           </div>
-
-      <!-- Search Bar -->
-      <form action="{{ route('dim_sum.search') }}" method="get" role="search" class="search-form">
-        <div class="input-group">
-          <input type="text" class="form-control"name="query" placeholder="Cari Jenis Dimsum...">
-          <div class="search-button">
-        <button type="submit" class="btn btn-primary">Cari</button>
-      </div>
-        </div>
-      </form>
-      <!-- End Search Bar -->
-
-      <!-- Tombol Cari -->
-      
-      <!-- End Tombol Cari -->
-
 
     
     </div>
