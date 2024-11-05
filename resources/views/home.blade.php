@@ -92,12 +92,10 @@
     </div>
   </section><!-- End Hero -->
 
-
-
   <main id="main">
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
+ <section id="menu" class="menu section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -118,166 +116,141 @@
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 menu-item filter-rebus">
-            <img src="{{asset('img/menu/cheong-fun.jpg')}}" class="menu-img" alt="">
+          <div class="col-lg-6 menu-item filter-kukus">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Cheong fun</a><span> Rp75.000
-              </span>
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
             </div>
             <div class="menu-ingredients">
-              Rebus, Kulit tahu
+              Bebek digoreng
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-kukus">
-            <img src="{{asset('img/menu/dimsum-ayam.jpg')}}" class="menu-img" alt="">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Dimsum Ayam </a><span>Rp69.000</span>
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
             </div>
             <div class="menu-ingredients">
-              Kukus, Kulit Tahu
+              Bebek digoreng
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-kukus">
-            <img src=" {{asset('img/menu/dimsum-salmon.jpg')}}" class="menu-img" alt="">
-           
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Dimsum Salmon </a><span>Rp99.000
-              </span>
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
             </div>
             <div class="menu-ingredients">
-              Kukus, Kulit Lumpia
+              Bebek digoreng
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-kukus">
-            <img src="  {{asset('img/menu/dimsum-udang.jpg')}}" class="menu-img" alt="">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Dimsum Udang</a><span>Rp85.000
-              </span>
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
             </div>
             <div class="menu-ingredients">
-              Kukus, Kulit Pangsit
+              Bebek digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-kukus">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Bebek digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-kukus">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Bebek digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-kukus">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Bebek digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-kukus">
+            <img src="{{asset('img/menu/bebek.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bebek Goreng </a><span>Rp69.000</span>
+            </div>
+            <div class="menu-ingredients">
+              Bebek digoreng
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-goreng">
-            <img src="{{asset('img/menu/ebi-furai.jpg')}}" class="menu-img" alt="">
-         
-            <div class="menu-content">
-              <a href="#">Ebi Furai</a><span>Rp70.000
-               </span>
-            </div>
-            <div class="menu-ingredients">
-              Goreng, Kulit Tepung
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-goreng">
-            <img src="{{asset('img/menu/fried-wonton.jpg')}}" class="menu-img" alt="">
+            <img src="{{asset('img/menu/ayam.jpg')}}" class="menu-img" alt="">
             
             <div class="menu-content">
-              <a href="#">Fried Wonton</a><span>Rp65.000
+              <a href="#">Ayam Goreng</a><span>Rp35.000
               </span>
             </div>
             <div class="menu-ingredients">
-              Goreng, Kulit Pangsit
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src=" {{asset('img/menu/hakau.jpg')}}" class="menu-img" alt="">
-           
-            <div class="menu-content">
-              <a href="#">Hakau</a><span>Rp88.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-              Kukus, Kulit Pangsit
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-rebus">
-            <img src=" {{asset('img/menu/hakau.jpg')}}" class="menu-img" alt="">
-        
-            <div class="menu-content">
-              <a href="#">Kuo Tie</a><span>Rp110.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-               Rebus, Kulit Tahu
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src="    {{asset('img/menu/xiao -long-bao.jpg')}}" class="menu-img" alt="">
-        
-            <div class="menu-content">
-              <a href="#">Xiao Long Bao </a><span>Rp99.000</span>
-            </div>
-            <div class="menu-ingredients">
-              Kukus, Kulit Lumpia
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src="  {{asset('img/menu/spring-roll.jpg')}}" class="menu-img" alt="">
-          
-            <div class="menu-content">
-              <a href="#">Spring Roll</a><span>Rp75.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-               Kukus, Kulit Lumpia
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src="{{asset ('img/menu/lumpia-kulit-tahu.jpg')}}" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lumpia Kulit Tahu</a><span>Rp85.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-               Kukus, Kulit Tahu
+              Ayam digoreng
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-goreng">
-            <img src=" {{asset('img/menu/chun-juan.jpg')}}" class="menu-img" alt="">
-           
-              
-            <div class="menu-content">
-              <a href="#">Chun Juan</a><span>Rp73.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-               Goreng, Kulit Lumpia
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src="  {{asset('img/menu/wan-ton.jpg')}}" class="menu-img" alt="">
-          
-            <div class="menu-content">
-              <a href="#">Wan Ton</a><span>Rp65.000
-              </span>
-            </div>
-            <div class="menu-ingredients">
-               Kukus, Kulit Pangsit
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-kukus">
-            <img src="{{asset('img/menu/mantau.jpg')}}" class="menu-img" alt="">
+            <img src="{{asset('img/menu/ayam.jpg')}}" class="menu-img" alt="">
             
             <div class="menu-content">
-              <a href="#">Mantau</a><span>Rp50.000
+              <a href="#">Ayam Goreng</a><span>Rp35.000
               </span>
             </div>
             <div class="menu-ingredients">
-               Kukus, Kulit Tepung
+            Ayam digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-goreng">
+            <img src="{{asset('img/menu/ayam.jpg')}}" class="menu-img" alt="">
+            
+            <div class="menu-content">
+              <a href="#">Ayam Goreng</a><span>Rp35.000
+              </span>
+            </div>
+            <div class="menu-ingredients">
+            Ayam digoreng
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-rebus">
+            <img src="{{asset('img/menu/tehbotol.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Teh botol</a><span> Rp10.000
+              </span>
+            </div>
+            <div class="menu-ingredients">
+              Teh doang ama botol plastik
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-rebus">
+            <img src="{{asset('img/menu/aquabotol.jpg')}}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Aqua</a><span> Rp5.000
+              </span>
+            </div>
+            <div class="menu-ingredients">
+              Air sungai direbus
             </div>
           </div>
 
@@ -285,7 +258,6 @@
 
       </div>
     </section><!-- End Menu Section -->
-    
     
     <!-- resources/views/reservasi/create.blade.php -->
     <section id="book-a-table" class="book-a-table">
