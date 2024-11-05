@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('menus', function (Blueprint $table) {
-            $table->id();
+        Schema::create('restaurants', function (Blueprint $table) {
+            $table->id(); // restaurant_id secara otomatis menggunakan id()
             $table->string('name');
-            $table->text('description')->nullable();
-            $table->decimal('price', 10, 2);
-            $table->string('category');
-            $table->boolean('is_available')->default(true);
+            $table->string('address');
+            $table->string('phone'); // kolom phone menggantikan phone_number
+            $table->time('opening_hour'); // waktu buka
+            $table->time('closing_hour'); // waktu tutup
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('restaurants');
     }
 };

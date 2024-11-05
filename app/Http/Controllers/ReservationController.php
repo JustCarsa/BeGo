@@ -13,6 +13,7 @@ class ReservationController extends Controller
         Log::info('Store reservation request received', $request->all());
 
         $validatedData = $request->validate([
+            'restaurant_id' => 'required|integer|exists:restaurants,id',
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:20',

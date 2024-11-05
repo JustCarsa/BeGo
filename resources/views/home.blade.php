@@ -314,53 +314,64 @@
         <form id="appointmentForm" action="{{ url('/reservasi') }}" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
             @csrf
             <div class="row">
-                <div class="col-lg-4 col-md-6 form-group">
-                    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Nama" value="{{ old('name') }}">
-                    @error('name')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email" value="{{ old('email') }}">
-                    @error('email')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                    <input type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" id="phone" placeholder="Nomer Telepon" value="{{ old('phone') }}">
-                    @error('phone')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-lg-4 col-md-6 form-group mt-3">
-                    <input type="date" name="date" class="form-control @error('date') is-invalid @enderror" id="date" placeholder="Tanggal" value="{{ old('date') }}">
-                    @error('date')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-lg-4 col-md-6 form-group mt-3">
-                    <input type="time" class="form-control @error('time') is-invalid @enderror" name="time" id="time" placeholder="Waktu" value="{{ old('time') }}">
-                    @error('time')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-lg-4 col-md-6 form-group mt-3">
-                    <input type="number" class="form-control @error('people') is-invalid @enderror" name="people" id="people" placeholder="Untuk berapa orang" value="{{ old('people') }}">
-                    @error('people')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-            </div>
             <div class="form-group mt-3">
-                <textarea class="form-control @error('pesan') is-invalid @enderror" name="pesan" rows="5" placeholder="Message">{{ old('pesan') }}</textarea>
-                @error('pesan')
+                <select name="restaurant" class="form-control" id="restaurant">
+                    <option value="" disabled selected>Select Restaurant</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group">
+                <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Nama" value="{{ old('name') }}">
+                @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="mb-3">
-                <div class="sent-message" id="successMessage" style="display: none;">Permintaan pemesanan Anda telah dikirim. Kami akan menelepon kembali atau mengirim Email untuk mengonfirmasi reservasi Anda. Terima kasih!</div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Email" value="{{ old('email') }}">
+                @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
-            <div class="text-center"><button type="submit" id="submitBtn">Pesan</button></div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="number" class="form-control @error('phone') is-invalid @enderror" name="phone" id="phone" placeholder="Nomer Telepon" value="{{ old('phone') }}">
+                @error('phone')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="date" name="date" class="form-control @error('date') is-invalid @enderror" id="date" placeholder="Tanggal" value="{{ old('date') }}">
+                @error('date')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="time" class="form-control @error('time') is-invalid @enderror" name="time" id="time" placeholder="Waktu" value="{{ old('time') }}">
+                @error('time')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="number" class="form-control @error('people') is-invalid @enderror" name="people" id="people" placeholder="Untuk berapa orang" value="{{ old('people') }}">
+                @error('people')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <textarea class="form-control @error('pesan') is-invalid @enderror" name="pesan" rows="5" placeholder="Message">{{ old('pesan') }}</textarea>
+            @error('pesan')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+        <div class="mb-3">
+            <div class="sent-message" id="successMessage" style="display: none;">Permintaan pemesanan Anda telah dikirim. Kami akan menelepon kembali atau mengirim Email untuk mengonfirmasi reservasi Anda. Terima kasih!</div>
+        </div>
+        <div class="text-center"><button type="submit" id="submitBtn">Pesan</button></div>
+
         </form>
     </div>
 </section>
@@ -416,7 +427,7 @@
 
         <div data-aos="fade-up">
             <iframe style="border:0; width: 100%; height: 350px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.967188117465!2d106.68161649946012!3d-6.199752033623458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9a2e358d58f%3A0xf0aa39baeb0129d9!2sBebek%20Slamet%20Cipondoh!5e0!3m2!1sid!2sid!4v1730653895796!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126934.07225995685!2d106.66186759724219!3d-6.172276998729311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbebek%20bakar%20haji%20slamet!5e0!3m2!1sid!2sid!4v1730729447065!5m2!1sid!2sid"
                     frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -424,13 +435,6 @@
             <div class="row mt-5">
                 <div class="col-lg-4">
                     <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Lokasi:</h4>
-                            <p>Jl. Meruya Selatan., Kec. Kembangan, Jakarta,
-                                Daerah Khusus Ibukota Jakarta 11650</p>
-                        </div>
-
                         <div class="open-hours">
                             <i class="bi bi-clock"></i>
                             <h4>Open Hours:</h4>
@@ -440,7 +444,7 @@
                         <div class="email">
                             <i class="bi bi-envelope"></i>
                             <h4>Email:</h4>
-                            <p>imperialdimsumpalace@gmail.com</p>
+                            <p>oksobatdungu234@gmail.com</p>
                         </div>
 
                         <div class="phone">
